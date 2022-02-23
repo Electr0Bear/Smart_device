@@ -1,13 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Smart Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptmono-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<body class="body">
+  <header class="body__header header">
+    <a class="header__logo">
+      <img src="img/logo.svg" alt="Smart Device">
+      <h5>Smart Device</h5>
+      <span>умные технологии</span>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list list">
+        <li class="header__nav-item">
+          <a class="header__nav-link link" href="mailto:info@sd.ru">info@sd.ru</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link link" href="tel:+74950005252">+7 (495) 000 52 52</a>
+        </li>
+      </ul>
+      <a class="header__nav-button link">Заказать звонок</a>
+    </nav>
+  </header>
+
+  <main class="body__main main">
+    <h1 class="visually-hidden">Smart Device - производство печатных плат</h1>
+    <section class="main__page-header page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__about">
+          <h2>Печатные платы</h2>
+          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="page-header__button link">Получить бесплатную консультацию</a>
+        </div>
+      </div>
+    </section>
+    <section class="main__about-us about-us">
+      <section class="about-us__features features">
+        <ul class="features__list list">
+          <li class="features__item">
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+              заказы плат и комплектующих в самые короткие сроки.</p>
+          </li>
+          <li class="features__item">
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </li>
+          <li class="features__item">
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="features__item">
+            <h3>Персонализация стоимости</h3>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+              устраивает.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us__about-company about-company">
+        <h3>О компании</h3>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+          года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+          светотехники России.</p>
+        <a class="about-company__button link">Подробнее</a>
+      </section>
+    </section>
+    <section class="main__goods goods">
+      <div class="goods__wrapper">
+        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <ul class="goods__list list">
+          <li class="goods__item">
+            <a class="goods__link--one link" href="#">
+              <h4>Производство печатных плат</h4>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a class="goods__link--two link" href="#">
+              <h4>Монтаж печатных плат</h4>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a class="goods__link--three link" href="#">
+              <h4>Комплектующие для светотехники</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__contact-us contact-us">
+      <form class="contact-us__form" method="POST" action="#">
+        <h3>Остались вопросы? Задайте их нам!</h3>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <div class="contact-us__name-input">
+          <label class="visually-hidden" for="contact-us-name">Ваше имя</label>
+          <input type="text" name="name" id="contact-us-name" placeholder="Имя" required="">
+        </div>
+        <div class="contact-us__phone-input">
+          <label class="visually-hidden" for="contact-us-phone">Ваш телефон</label>
+          <input type="tel" name="phone" id="contact-us-phone" placeholder="Телефон" pattern="[\+]*[7-8]{1}\s?[\(]*[8-9]{1}[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}" required="">
+        </div>
+        <div class="contact-us__text-input">
+          <label class="visually-hidden" for="contact-us-text">Ваш вопрос</label>
+          <textarea name="question" id="contact-us-text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <button class="contact-us__submit-button" type="submit">Задать вопрос</button>
+        <div class="contact-us__data-agreement-input">
+          <input type="checkbox" name="personal-data-agreement" id="personal-data-agreement" required="">
+          <label for="personal-data-agreement">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="body__footer footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo link" href="#">
+        <img src="img/logo.svg" alt="Smart Device">
+        <h5>Smart Device</h5>
+        <span>умные технологии</span>
+      </a>
+      <div class="footer__site-nav">
+        <h4>Разделы сайта</h4>
+        <ul class="footer__site-nav-list">
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">О компании</a>
+          </li>
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">Продукты</a>
+          </li>
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">Производство печатных плат</a>
+          </li>
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">Монтаж печатных плат</a>
+          </li>
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">Комплектующие</a>
+          </li>
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">Доставка</a>
+          </li>
+          <li class="footer__site-nav-item">
+            <a class="footer__site-nav-link link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <h4>Наш офис</h4>
+        <ul class="footer__contacts-list">
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer__extra-link footer__extra-link--rights link" href="#">Все права защищены</a>
+      <a class="footer__extra-link footer__extra-link--trade-mark link" href="#">1999-2018 SD Service Devices</a>
+      <a class="footer__extra-link footer__extra-link--confidentiality link" href="#">Условия конфиденциальности</a>
+      <a class="footer__extra-link footer__extra-link--designed link" href="#">Developed by wow studio</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+
+  <section class="body__consult-modal consult-modal">
+    <h3>Закажите звонок</h3>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <button class="consult-modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    <form class="consult-modal__form" method="POST" action="#">
+      <div class="consult-modal__name-input">
+        <label class="visually-hidden" for="consult-name">Ваше имя</label>
+        <input type="text" name="name" id="consult-name" placeholder="Имя" required="">
+      </div>
+      <div class="consult-modal__phone-input">
+        <label class="visually-hidden" for="consult-phone">Ваш телефон</label>
+        <input type="tel" name="phone" id="consult-phone" placeholder="Телефон" pattern="[\+]*[7-8]{1}\s?[\(]*[8-9]{1}[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}" required="">
+      </div>
+      <div class="consult-modal__text-input">
+        <label class="visually-hidden" for="consult-text">Ваш вопрос</label>
+        <textarea name="question" id="consult-text" cols="30" rows="10" placeholder="Ваш вопрос" re=""></textarea>
+      </div>
+      <button class="consult-modal__submit-button" type="submit">Отправить</button>
+      <div class="consult-modal__data-agreement-input">
+        <input type="checkbox" name="personal-data-agreement" id="personal-data-agreement" required="">
+        <label for="personal-data-agreement">Я согласен на обработку персональных данных</label>
+      </div>
+    </form>
+  </section>
+
 </body>
+
 </html>
