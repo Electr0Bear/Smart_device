@@ -60,13 +60,19 @@
 
 .header__nav-link {
   margin: 10px 40px;
-  display: block;
+  display: flex;
+  align-items: center;
   line-height: 18px;
   color: $white;
 }
 
 .header__nav-phone {
   white-space: nowrap;
+}
+
+.header__nav-link svg {
+  margin-right: 15px;
+  color: $basicBlue;
 }
 
 .header__nav-button {
