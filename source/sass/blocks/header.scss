@@ -1,11 +1,24 @@
 .header {
+  position: relative;
   color: $white;
   background-color: $basicDark;
   box-sizing: border-box;
+  background-image: url("../img/background/header-background-waves@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/background/header-background-waves@2x.png");
+  }
 }
 
 .header__wrapper {
-  padding: 33px 15px;
+  padding: 33px 15px 100px 15px;
+}
+
+.header__nav-grid-layout {
   display: grid;
   grid-template-columns: 1fr auto;
 }
@@ -58,7 +71,7 @@
 
 .header__nav-button {
   padding: 12px 0;
-  min-width: 180px;
+  width: 180px;
   text-align: center;
   border: 1px solid $white;
   border-radius: 5px;

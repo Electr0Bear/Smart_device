@@ -13,35 +13,42 @@
 <body class="body">
   <header class="body__header header">
     <div class="header__wrapper container">
-      <a class="header__logo">
-        <img src="img/logo.svg" alt="Smart Device" width="52" height="52">
-        <span>Smart Device <span>умные технологии</span></span>
-      </a>
-      <nav class="header__nav">
-        <ul class="header__nav-list list">
-          <li class="header__nav-item">
-            <a class="header__nav-link header__nav-email link" href="mailto:info@sd.ru">info@sd.ru</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link header__nav-phone link" href="tel:+74950005252">+7 (495) 000 52 52</a>
-          </li>
-        </ul>
-        <a class="header__nav-button link">Заказать звонок</a>
+      <div class="header__nav-grid-layout">
+        <a class="header__logo">
+          <img src="img/logo.svg" alt="Smart Device" width="52" height="52">
+          <span>Smart Device <span>умные технологии</span></span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-email link" href="mailto:info@sd.ru">
+                <span>info@sd.ru</span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-phone link" href="tel:+74950005252">
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+          <a class="header__nav-button link">Заказать звонок</a>
+        </nav>
+      </div>
+      <section class="header__company-info company-info">
+        <div class="company-info__grid-layout">
+          <div class="company-info__wrapper">
+            <h2>Печатные платы</h2>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="company-info__button link">Получить бесплатную консультацию</a>
+          </div>
+        </div>
+      </section>
     </div>
-    </nav>
   </header>
 
   <main class="body__main main">
     <h1 class="visually-hidden">Smart Device - производство печатных плат</h1>
-    <section class="main__page-header page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__about">
-          <h2>Печатные платы</h2>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="page-header__button link">Получить бесплатную консультацию</a>
-        </div>
-      </div>
-    </section>
+
     <section class="main__about-us about-us">
       <section class="about-us__features features">
         <ul class="features__list list">
