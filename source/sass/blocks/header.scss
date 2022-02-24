@@ -1,0 +1,66 @@
+.header {
+  color: $white;
+  background-color: $basicDark;
+  box-sizing: border-box;
+}
+
+.header__wrapper {
+  padding: 33px 15px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.header__logo {
+  display: flex;
+  width: 205px;
+  align-items: center;
+}
+
+.header__logo > span {
+  margin-left: 5px;
+  display: block;
+  font-family: $robotoCondensed;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.header__logo span > span {
+  display: block;
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: $grey5;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.header__nav-link {
+  margin: 10px 40px;
+  display: block;
+  line-height: 18px;
+  color: $white;
+}
+
+.header__nav-phone {
+  white-space: nowrap;
+}
+
+.header__nav-button {
+  padding: 12px 0;
+  min-width: 180px;
+  text-align: center;
+  border: 1px solid $white;
+  border-radius: 5px;
+  cursor: pointer;
+}
