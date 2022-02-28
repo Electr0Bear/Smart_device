@@ -1,12 +1,20 @@
 .company-info__grid-layout {
   display: grid;
   grid-template-columns: 720px 1fr;
+
+  @media (max-width: $tabletMax) {
+    grid-template-columns: 470px 1fr;
+  }
+
+  @media (max-width: $mobileMax) {
+    grid-template-columns: minmax(287px, 379px);
+  }
 }
 
 .company-info__wrapper {
   padding-top: 231px;
   position: relative;
-  min-height: 780px;
+  min-height: 628px;
 
   &::before {
     content: "";
@@ -14,18 +22,68 @@
     top: calc(50% - 250px);
     left: 800px;
     display: block;
-    background-image: url("../img/background/header-background-board@1x.png"), url("../img/background/background-two-triangles.svg");
+    width: 705px;
+    height: 515px;
+    background-image: url("../img/background/header-background-board@1x.png"),
+      url("../img/background/background-two-triangles.svg");
     background-repeat: no-repeat;
     background-size: contain, 637px;
     background-position: center, 0 -130px;
-    width: 705px;
-    height: 515px;
     overflow: hidden;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     &::before {
-      background-image: url("../img/background/header-background-board@2x.png"), url("../img/background/background-two-triangles.svg");
+      background-image: url("../img/background/header-background-board@2x.png"),
+        url("../img/background/background-two-triangles.svg");
+    }
+  }
+
+  @media (max-width: $tabletMax) {
+    padding-top: 116px;
+    padding-left: 63px;
+    min-height: 534px;
+
+    &::before {
+      top: calc(50% - 250px);
+      left: 500px;
+      width: 400px;
+      height: 407px;
+      background-image: url("../img/background/header-background-board-tablet@1x.png"),
+        url("../img/background/background-two-triangles.svg");
+      background-size: contain, 407px;
+      background-position: center, 0 -50px;
+    }
+  }
+
+  @media (max-width: $tabletMax) and (min-resolution: 144dpi),
+    (max-width: $tabletMax) and (min-resolution: 1.5dppx) {
+    &::before {
+      background-image: url("../img/background/header-background-board-tablet@2x.png"),
+        url("../img/background/background-two-triangles.svg");
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    padding-top: 231px;
+    padding-left: 0;
+
+    &::before {
+      top: calc(50% - 300px);
+      left: 50px;
+      width: 700px;
+      background-image: url("../img/background/header-background-board-mobile@1x.png"),
+        url("../img/background/background-two-triangles.svg");
+      background-size: auto, 407px;
+      background-position: 0 70px, center;
+    }
+  }
+
+  @media (max-width: $mobileMax) and (min-resolution: 144dpi),
+    (max-width: $mobileMax) and (min-resolution: 1.5dppx) {
+    &::before {
+      background-image: url("../img/background/header-background-board-mobile@2x.png"),
+        url("../img/background/background-two-triangles.svg");
     }
   }
 }
@@ -39,6 +97,16 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+
+  @media (max-width: $tabletMax) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $mobileMax) {
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 .company-info p {
@@ -59,13 +127,28 @@
     height: 2px;
     background-color: $white;
   }
+
+  @media (max-width: $tabletMax) {
+    padding-left: 51px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      width: 33px;
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .company-info__button {
   margin-left: 98px;
-  padding: 15px 0;
+  padding: 18px 0;
   display: block;
-  width: 407px;
+  max-width: 407px;
   font-family: $robotoCondensed;
   font-weight: 700;
   line-height: 19px;
@@ -75,4 +158,28 @@
   background-color: $basicBlue;
   border-radius: 5px;
   cursor: pointer;
+
+  @media (max-width: $tabletMax) {
+    margin-left: 51px;
+    max-width: 379px;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-left: 0;
+    max-width: 379px;
+  }
+}
+
+.company-info__button span:first-child {
+  @media (max-width: $mobileMax) {
+    display: none;
+  }
+}
+
+.company-info__button span:last-child {
+  display: none;
+
+  @media (max-width: $mobileMax) {
+    display: initial;
+  }
 }
