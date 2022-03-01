@@ -1,0 +1,95 @@
+.goods {
+  background-color: $basicDark;
+}
+
+.goods__wrapper {
+  padding: 93px 80px 127px 80px;
+}
+
+.goods h2 {
+  margin: 0 0 47px 0;
+  font-family: $robotoCondensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.goods__item {
+  margin: 15px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-width: 255px;
+  max-width: 370px;
+  flex-basis: 255px;
+}
+
+.goods__link {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    min-width: 17%;
+    min-height: 10%;
+    background-color: $basicBlue;
+    background-image: url("../../img/icons/icon-arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $basicBlue;
+
+    & img {
+      opacity: 0.35;
+    }
+
+    & h4 {
+      color: $basicBlue;
+    }
+  }
+
+  &:active {
+    background-color: $basicBlueOpacue01;
+  }
+}
+
+.goods__link picture {
+  display: block;
+}
+
+.goods__link img {
+  display: block;
+  opacity: 0.2;
+  max-width: 100%;
+  height: auto;
+}
+
+.goods__item h4 {
+  margin: 0;
+  position: absolute;
+  top: 53px;
+  left: 44px;
+  display: block;
+  width: 170px;
+  font-family: $robotoCondensed;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  z-index: 1;
+}

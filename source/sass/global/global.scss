@@ -15,10 +15,6 @@
 .container {
   margin: 0 auto;
   max-width: $desktopMax;
-
-  @media (max-width: $tabletMax) {
-    max-width: $tabletMax;
-  }
 }
 
 .visually-hidden {

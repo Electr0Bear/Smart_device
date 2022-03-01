@@ -1,0 +1,49 @@
+.about-company {
+  padding: 0 135px 96px 310px;
+  color: $grey3;
+  background-image: url("../../img/background/about-us-background@1x.png");
+  background-repeat: no-repeat;
+  background-position: 105px 0;
+}
+
+.about-company h3 {
+  margin: 0 0 20px 0;
+  font-family: $robotoCondensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company p {
+  margin: 0 0 20px 0;
+  font-family: $ptmono;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.about-company__button {
+  padding: 14px 0;
+  display: block;
+  max-width: 180px;
+  font-family: $robotoCondensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basicBlue;
+  border: 1px solid $basicBlue;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $basicBlue;
+    color: $white;
+  }
+
+  &:active {
+    color: $grey4;
+  }
+}

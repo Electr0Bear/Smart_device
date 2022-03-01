@@ -59,30 +59,42 @@
     <h1 class="visually-hidden">Smart Device - производство печатных плат</h1>
 
     <section class="main__about-us about-us">
-      <section class="about-us__features features">
+      <section class="about-us__features features container">
         <ul class="features__list list">
           <li class="features__item">
+            <svg width="35" height="35">
+              <use xlink:href="img/icons/sprite_auto.svg#icon-stopwatch"></use>
+            </svg>
             <h3>Оперативные сроки</h3>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
               заказы плат и комплектующих в самые короткие сроки.</p>
           </li>
           <li class="features__item">
+            <svg width="35" height="35">
+              <use xlink:href="img/icons/sprite_auto.svg#icon-hired"></use>
+            </svg>
             <h3>Крупные поставщики</h3>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="features__item">
+            <svg width="35" height="35">
+              <use xlink:href="img/icons/sprite_auto.svg#icon-detective"></use>
+            </svg>
             <h3>Полная конфиденциальность</h3>
             <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="features__item">
+            <svg width="35" height="35">
+              <use xlink:href="img/icons/sprite_auto.svg#icon-tag"></use>
+            </svg>
             <h3>Персонализация стоимости</h3>
             <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
               устраивает.</p>
           </li>
         </ul>
       </section>
-      <section class="about-us__about-company about-company">
+      <section class="about-us__about-company about-company container">
         <h3>О компании</h3>
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
           года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
@@ -94,22 +106,55 @@
       </section>
     </section>
     <section class="main__goods goods">
-      <div class="goods__wrapper">
+      <div class="goods__wrapper container">
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="goods__list list">
           <li class="goods__item">
-            <a class="goods__link--one link" href="#">
+            <a class="goods__link goods__link--one link" href="#">
               <h4>Производство печатных плат</h4>
+              <!-- 1x: 320px: 2x: 720px -->
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/content/image1-mobile@1x.webp 1x, img/content/image1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/image1-tablet@1x.webp 1x, img/content/image1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/image1@1x.webp 1x, img/content/image1@2x.webp 2x"> -->
+                <source media="(max-width: 767px)" srcset="img/content/image1-mobile@1x.png 1x, img/content/image1-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/content/image1-tablet@1x.png 1x, img/content/image1-tablet@2x.png 2x">
+                <img src="img/content/image1@1x.png" srcset="img/content/image1@2x.png 2x" loading="lazy" alt="Печатные платы" width="370" height="620">
+              </picture>
             </a>
           </li>
           <li class="goods__item">
-            <a class="goods__link--two link" href="#">
+            <a class="goods__link goods__link--two link" href="#">
               <h4>Монтаж печатных плат</h4>
+              <!-- 1x: 320px: 2x: 720px -->
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/content/image2-mobile@1x.webp 1x, img/content/image2-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/image2-tablet@1x.webp 1x, img/content/image2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/image2@1x.webp 1x, img/content/image2@2x.webp 2x"> -->
+                <source media="(max-width: 767px)" srcset="img/content/image2-mobile@1x.png 1x, img/content/image2-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/content/image2-tablet@1x.png 1x, img/content/image2-tablet@2x.png 2x">
+                <img src="img/content/image2@1x.png" srcset="img/content/image2@2x.png 2x" loading="lazy" alt="Печатные платы" width="370" height="620">
+              </picture>
             </a>
           </li>
           <li class="goods__item">
-            <a class="goods__link--three link" href="#">
+            <a class="goods__link goods__link--three link" href="#">
               <h4>Комплектующие для светотехники</h4>
+              <!-- 1x: 320px: 2x: 720px -->
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/content/image3-mobile@1x.webp 1x, img/content/image3-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/image3-tablet@1x.webp 1x, img/content/image3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/image3@1x.webp 1x, img/content/image3@2x.webp 2x"> -->
+                <source media="(max-width: 767px)" srcset="img/content/image3-mobile@1x.png 1x, img/content/image3-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/content/image3-tablet@1x.png 1x, img/content/image3-tablet@2x.png 2x">
+                <img src="img/content/image3@1x.png" srcset="img/content/image3@2x.png 2x" loading="lazy" alt="Печатные платы" width="370" height="620">
+              </picture>
             </a>
           </li>
         </ul>
