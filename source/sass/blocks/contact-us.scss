@@ -1,0 +1,130 @@
+.contact-us {
+  background-color: $basicBlue;
+  background-image: url("../../img/background/background-plane@1x.png"),
+    url("../../img/background/background-two-triangles.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 350px) center,
+    calc(50% - 400px) calc(50% - 50px);
+  background-size: 511px 288px, 636px 636px;
+}
+
+.contact-us__wrapper {
+  padding: 96px 135px 113px 135px;
+  display: grid;
+  grid-template-columns: 1fr 570px;
+}
+
+.contact-us__form {
+  grid-column: 2 / 3;
+}
+
+.contact-us__form h3 {
+  margin: 0 0 7px 0;
+  font-family: $robotoCondensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.contact-us__form p {
+  margin: 0 0 49px 0;
+  font-family: $ptmono;
+  font-weight: 400;
+  line-height: 22px;
+  color: $white;
+}
+
+.contact-us__form-flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us__input {
+  margin-bottom: 40px;
+  flex-basis: 270px;
+  background-color: $basicBlue;
+}
+
+.contact-us__input input,
+.contact-us__input textarea {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: $whiteOpacue01;
+  font-family: $ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $white;
+  }
+}
+
+.contact-us__text-input {
+  flex-basis: 570px;
+}
+
+.contact-us__text-input textarea {
+  resize: none;
+  height: 154px;
+}
+
+.contact-us__submit-button {
+  padding: 14px;
+  flex-basis: 270px;
+  font-family: $robotoCondensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $basicBlue;
+  border: 1px solid $white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us__data-agreement-input {
+  flex-basis: 270px;
+}
+
+.contact-us__data-agreement-input label {
+  margin-right: 35px;
+  padding-left: 30px;
+  position: relative;
+  display: block;
+  font-family: $ptmono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $whiteOpacue08;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+    overflow: hidden;
+  }
+}
+
+.contact-us__data-agreement-input input:checked + label::before {
+  background-image: url("../img/icons/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
