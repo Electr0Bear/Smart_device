@@ -116,3 +116,39 @@ if (document.querySelector('.contact-us__form')) {
   phoneMaskHandler(phoneInput);
   removeInputValidity(formInputs);
 }
+
+// Всплывающее окно
+if (document.querySelector('.header__nav-button') && document.querySelector('.consult-modal')) {
+  const getConsultBtn = document.querySelector('.header__nav-button');
+  const modal = document.querySelector('.consult-modal');
+  const modalForm = modal.querySelector('.consult-modal__form')
+  const modalCloseBtn = modalForm.querySelector('.consult-modal__close-button');
+  const modalFormInputs = modalForm.querySelectorAll('.input');
+  const modalNameInput = modalForm.querySelector('.consult-modal__name-input input');
+  const modalPhoneInput = modalForm.querySelector('.consult-modal__phone-input input');
+  const modalSubmitBtn = modalForm.querySelector('.consult-modal__submit-button');
+
+  const closeModal = () => {
+    modal.classList.remove('consult-modal--show');
+  }
+
+  const modalHandler = () => {
+    getConsultBtn.addEventListener('click', evt => {
+      evt.preventDefault();
+      modal.classList.add('consult-modal--show');
+      modalNameInput.focus();
+    });
+
+    modalCloseBtn.addEventListener('click', evt => {
+      evt.preventDefault();
+      closeModal();
+    });
+
+    onClickSubmitBtn(modalFormInputs, modalSubmitBtn);
+    onSubmitForm(modalForm, modalFormInputs);
+    phoneMaskHandler(modalPhoneInput);
+    removeInputValidity(modalFormInputs);
+  }
+
+  modalHandler();
+}
