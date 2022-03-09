@@ -1,3 +1,107 @@
 .consult-modal {
+  position: fixed;
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.consult-modal__form {
+  padding: 33px 40px;
+  position: relative;
+  display: block;
+  width: 490px;
+  height: fit-content;
+  color: $white;
+  background-color: $basicBlue;
+}
+
+.consult-modal__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 53px;
+  min-height: 53px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-image: url("../img/icons/icon-close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.consult-modal__form h3 {
+  margin: 0 0 20px 0;
+  font-family: $robotoCondensed;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.consult-modal__form p {
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.consult-modal__input {
+  margin-bottom: 30px;
+}
+
+.consult-modal__text-input textarea {
+  height: 104px;
+}
+
+.consult-modal__submit-button {
+  margin-bottom: 34px;
+  padding: 14px;
+  width: 100%;
+  font-family: $robotoCondensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $basicBlue;
+  border: 1px solid $white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.consult-modal__data-agreement-input label {
+  margin-right: 35px;
+  padding-left: 48px;
+  position: relative;
+  display: block;
+  font-family: $ptmono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $whiteOpacue08;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+    overflow: hidden;
+  }
+}
+
+.consult-modal__data-agreement-input input:checked + label::before {
+  background-image: url("../img/icons/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
