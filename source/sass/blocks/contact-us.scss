@@ -1,11 +1,11 @@
 .contact-us {
   background-color: $basicBlue;
-  background-image: url("../../img/background/background-plane@1x.png"),
-    url("../../img/background/background-two-triangles.svg");
+  background-image: url("../img/background/background-plane@1x.png"),
+    url("../img/background/background-two-triangles.svg");
   background-repeat: no-repeat;
-  background-position: calc(50% - 350px) center,
-    calc(50% - 400px) calc(50% - 50px);
-  background-size: 511px 288px, 636px 636px;
+  background-position: calc(50% - 355px) calc(50% - 30px),
+    calc(50% - 450px) calc(50% - 75px);
+  background-size: 511px 288px, 675px;
 
   @media (max-width: $tabletMax) {
     background-image: none;
@@ -13,7 +13,7 @@
 }
 
 .contact-us__wrapper {
-  padding: 96px 135px 113px 135px;
+  padding: 91px 120px 94px 120px;
   display: grid;
   grid-template-columns: 1fr 600px;
 
@@ -33,7 +33,7 @@
 }
 
 .contact-us__form h3 {
-  margin: 0 15px 7px 15px;
+  margin: 0 15px 9px 10px;
   font-family: $robotoCondensed;
   font-weight: 400;
   font-size: 36px;
@@ -52,7 +52,7 @@
 }
 
 .contact-us__form p {
-  margin: 0 15px 49px 15px;
+  margin: 0 15px 31px 15px;
   font-family: $ptmono;
   font-weight: 400;
   line-height: 22px;
@@ -110,13 +110,14 @@
 
 .contact-us__data-agreement-input {
   margin: 20px 15px;
+  padding: 0 8px;
   flex-grow: 1;
   flex-basis: 270px;
 }
 
 .contact-us__data-agreement-input label {
-  margin-right: 35px;
-  padding-left: 30px;
+  margin-right: 25px;
+  padding-left: 32px;
   position: relative;
   display: block;
   font-family: $ptmono;
@@ -129,6 +130,7 @@
   &::before {
     content: "";
     position: absolute;
+    top: 4px;
     left: 0;
     display: block;
     width: 16px;

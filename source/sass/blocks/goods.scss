@@ -3,7 +3,7 @@
 }
 
 .goods__wrapper {
-  padding: 93px 80px 127px 80px;
+  padding: 88px 120px 112px 120px;
 
   @media (max-width: $tabletMax) {
     padding: 53px 25px 78px 25px;
@@ -15,7 +15,7 @@
 }
 
 .goods h2 {
-  margin: 0 0 47px 0;
+  margin: 0 0 37px 15px;
   font-family: $robotoCondensed;
   font-weight: 400;
   font-size: 36px;
@@ -123,7 +123,7 @@
 .goods__item h4 {
   margin: 0;
   position: absolute;
-  top: 53px;
+  top: 50px;
   left: 44px;
   display: block;
   width: 170px;

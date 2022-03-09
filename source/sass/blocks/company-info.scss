@@ -19,16 +19,16 @@
   &::before {
     content: "";
     position: absolute;
-    top: calc(50% - 250px);
-    left: 800px;
+    top: calc(50% - 140px);
+    left: 788px;
     display: block;
     width: 705px;
     height: 515px;
     background-image: url("../img/background/header-background-board@1x.png"),
       url("../img/background/background-two-triangles.svg");
     background-repeat: no-repeat;
-    background-size: contain, 637px;
-    background-position: center, 0 -130px;
+    background-size: contain, 670px;
+    background-position: center, -10px -140px;
     overflow: hidden;
   }
 
@@ -89,7 +89,7 @@
 }
 
 .company-info h2 {
-  margin: 0 0 31px 0;
+  margin: 0 0 26px 0;
   position: relative;
   font-family: $robotoCondensed;
   font-weight: 700;
@@ -110,7 +110,7 @@
 }
 
 .company-info p {
-  margin: 0 0 37px 0;
+  margin: 0 0 44px 0;
   padding-left: 98px;
   position: relative;
   font-family: $ptmono;

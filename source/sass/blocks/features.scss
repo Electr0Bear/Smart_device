@@ -1,5 +1,5 @@
 .features {
-  padding: 109px 135px;
+  padding: 112px 135px 103px 135px;
 
   @media (max-width: $tabletMax) {
     padding: 54px 25px;
@@ -27,7 +27,7 @@
 }
 
 .features__item {
-  padding: 40px 45px;
+  padding: 40px 42px;
   color: $basicBlue;
   border: 1px solid $grey;
   border-left: 3px solid $basicBlue;
@@ -49,7 +49,7 @@
 }
 
 .features__item h3 {
-  margin: 23px 0 15px 0;
+  margin: 15px 0;
   font-family: $robotoCondensed;
   font-weight: 400;
   font-size: 24px;
