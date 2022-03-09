@@ -152,3 +152,29 @@ if (document.querySelector('.header__nav-button') && document.querySelector('.co
 
   modalHandler();
 }
+
+const footerMenuHandler = menu => {
+  menu.classList.toggle('footer__menu--hide', !menu.classList.contains('footer__menu--hide'));
+}
+
+// Аккордеон в футере
+
+if (document.querySelector('.footer__site-nav') && document.querySelector('.footer__contacts')) {
+  const footerNav = document.querySelector('.footer__site-nav');
+  const footerNavTitle = footerNav.querySelector('h4');
+  const footerNavList = footerNav.querySelector('.footer__site-nav-list');
+  const footerContacts = document.querySelector('.footer__contacts');
+  const footerContactsTitle = footerContacts.querySelector('h4');
+  const footerContactsList = footerContacts.querySelector('.footer__contacts-list');
+
+  footerMenuHandler(footerNavList);
+  footerMenuHandler(footerContactsList);
+
+  footerNavTitle.addEventListener('click', () => {
+    footerMenuHandler(footerNavList);
+  });
+
+  footerContactsTitle.addEventListener('click', () => {
+    footerMenuHandler(footerContactsList);
+  });
+}
