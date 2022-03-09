@@ -7,6 +7,7 @@
   }
 
   @media (max-width: $mobileMax) {
+    padding: 0 15px;
     grid-template-columns: minmax(287px, 379px);
   }
 }
@@ -45,14 +46,14 @@
     min-height: 534px;
 
     &::before {
-      top: calc(50% - 250px);
-      left: 500px;
-      width: 400px;
-      height: 407px;
+      top: calc(50% - 270px);
+      left: 415px;
+      width: 600px;
+      height: 450px;
       background-image: url("../img/background/header-background-board-tablet@1x.png"),
         url("../img/background/background-two-triangles.svg");
-      background-size: contain, 407px;
-      background-position: center, 0 -50px;
+      background-size: 460px, 525px;
+      background-position: 70px 45px, 0 -105px;
     }
   }
 
@@ -65,17 +66,17 @@
   }
 
   @media (max-width: $mobileMax) {
-    padding-top: 231px;
+    padding-top: 227px;
     padding-left: 0;
 
     &::before {
       top: calc(50% - 300px);
-      left: 50px;
+      left: 13px;
       width: 700px;
       background-image: url("../img/background/header-background-board-mobile@1x.png"),
         url("../img/background/background-two-triangles.svg");
-      background-size: auto, 407px;
-      background-position: 0 70px, center;
+      background-size: auto, 500px;
+      background-position: 0 65px, 125px -70px;
     }
   }
 
@@ -89,7 +90,7 @@
 }
 
 .company-info h2 {
-  margin: 0 0 26px 0;
+  margin: 0 0 28px 0;
   position: relative;
   font-family: $robotoCondensed;
   font-weight: 700;
@@ -110,7 +111,7 @@
 }
 
 .company-info p {
-  margin: 0 0 44px 0;
+  margin: 0 0 56px 0;
   padding-left: 98px;
   position: relative;
   font-family: $ptmono;
@@ -139,6 +140,7 @@
   }
 
   @media (max-width: $mobileMax) {
+    margin: 0 0 40px 0;
     font-size: 16px;
     line-height: 25px;
   }
@@ -148,7 +150,7 @@
   margin-left: 98px;
   padding: 18px 0;
   display: block;
-  max-width: 407px;
+  width: 407px;
   font-family: $robotoCondensed;
   font-weight: 700;
   line-height: 19px;
@@ -162,11 +164,12 @@
 
   @media (max-width: $tabletMax) {
     margin-left: 51px;
-    max-width: 379px;
+    width: 379px;
   }
 
   @media (max-width: $mobileMax) {
     margin-left: 0;
+    width: auto;
     max-width: 379px;
   }
 }

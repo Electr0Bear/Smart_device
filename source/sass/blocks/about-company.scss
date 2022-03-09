@@ -11,9 +11,10 @@
   }
 
   @media (max-width: $tabletMax) {
-    padding: 0 25px 83px 210px;
+    padding: 0 25px 81px 213px;
     background-image: url("../img/background/about-us-background-tablet@1x.png");
     background-position: 0 0;
+    background-position: -2px 0;
     background-size: 251px 361px;
   }
 
@@ -36,20 +37,42 @@
   line-height: 51px;
 
   @media (max-width: $tabletMax) {
-    margin: 0 0 23px 0;
+    margin: 0 0 25px 0;
     font-size: 32px;
     line-height: 45px;
   }
+
+  @media (max-width: $mobileMax) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
-.about-company p {
+.about-company__text {
   margin: 0 0 21px 0;
   font-family: $ptmono;
   font-weight: 400;
   line-height: 22px;
 
+  &--paragraph-two {
+    margin: 0 0 39px 0;
+  }
+
   @media (max-width: $tabletMax) {
-    margin: 0 0 23px 0;
+    margin: 0 0 20px 0;
+
+    &--paragraph-two {
+      margin: 0 0 42px 0;
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    margin: 0 0 45px 0;
+    line-height: 21.5px;
+
+    &--paragraph-two {
+      margin: 0 0 30px 0;
+    }
   }
 }
 
@@ -60,7 +83,6 @@
 }
 
 .about-company__button {
-  margin-top: 39px;
   padding: 14px 0;
   display: block;
   max-width: 180px;

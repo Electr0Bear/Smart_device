@@ -6,11 +6,11 @@
   padding: 88px 120px 112px 120px;
 
   @media (max-width: $tabletMax) {
-    padding: 53px 25px 78px 25px;
+    padding: 51px 25px 57px 25px;
   }
 
   @media (max-width: $mobileMax) {
-    padding: 53px 15px 64px 15px;
+    padding: 47px 15px 50px 15px;
   }
 }
 
@@ -23,12 +23,13 @@
   color: $white;
 
   @media (max-width: $tabletMax) {
-    margin: 0 0 23px 0;
+    margin: 0 100px 26px 0;
     font-size: 32px;
     line-height: 45px;
   }
 
   @media (max-width: $mobileMax) {
+    margin: 0 0 26px 9px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -135,7 +136,7 @@
   z-index: 1;
 
   @media (max-width: $tabletMax) {
-    top: 43px;
+    top: 40px;
     left: 43px;
   }
 

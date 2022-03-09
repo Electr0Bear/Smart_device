@@ -18,18 +18,26 @@
   grid-template-columns: 1fr 600px;
 
   @media (max-width: $tabletMax) {
-    padding: 83px 74px 103px 74px;
+    padding: 80px 70px 79px 74px;
     grid-template-columns: 1fr minmax(600px, 700px);
   }
 
   @media (max-width: $mobileMax) {
-    padding: 33px 0 41px 0;
+    padding: 30px 0 22px 0;
     grid-template-columns: 1fr minmax(290px, 700px) 1fr;
   }
 }
 
 .contact-us__form {
   grid-column: 2 / 3;
+
+  @media (max-width: $tabletMax) {
+    padding-left: 4px;
+  }
+
+  @media (max-width: $mobileMax) {
+    padding-left: 0;
+  }
 }
 
 .contact-us__form h3 {
@@ -41,11 +49,13 @@
   color: $white;
 
   @media (max-width: $tabletMax) {
+    margin: 0 15px 14px 10px;
     font-size: 32px;
     line-height: 45px;
   }
 
   @media (max-width: $mobileMax) {
+    margin: 0 15px 14px 15px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -58,8 +68,12 @@
   line-height: 22px;
   color: $white;
 
+  @media (max-width: $tabletMax) {
+    margin: 0 15px 33px 15px;
+  }
+
   @media (max-width: $mobileMax) {
-    margin: 0 15px 15px 15px;
+    margin: 0 15px 10px 15px;
   }
 }
 
@@ -76,6 +90,10 @@
   flex-basis: 270px;
   background-color: $basicBlue;
 
+  @media (max-width: $tabletMax) {
+    margin: 22px 15px;
+  }
+
   @media (max-width: $mobileMax) {
     margin: 15px 15px;
   }
@@ -88,6 +106,10 @@
 
 .contact-us__text-input textarea {
   height: 154px;
+
+  @media (max-width: $mobileMax) {
+    height: 107px;
+  }
 }
 
 .contact-us__submit-button {
@@ -106,6 +128,14 @@
   border: 1px solid $white;
   border-radius: 5px;
   cursor: pointer;
+
+  @media (max-width: $tabletMax) {
+    margin: 25px 15px;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin: 13px 15px;
+  }
 }
 
 .contact-us__data-agreement-input {
@@ -113,6 +143,10 @@
   padding: 0 8px;
   flex-grow: 1;
   flex-basis: 270px;
+
+  @media (max-width: $mobileMax) {
+    padding: 0;
+  }
 }
 
 .contact-us__data-agreement-input label {
@@ -137,6 +171,12 @@
     height: 16px;
     border: 1px solid $white;
     overflow: hidden;
+  }
+
+  @media (max-width: $mobileMax) {
+    &::before {
+      top: 1px;
+    }
   }
 }
 
