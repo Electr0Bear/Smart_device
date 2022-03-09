@@ -172,9 +172,15 @@ if (document.querySelector('.footer__site-nav') && document.querySelector('.foot
 
   footerNavTitle.addEventListener('click', () => {
     footerMenuHandler(footerNavList);
+    if (!footerContactsList.classList.contains('footer__menu--hide')) {
+      footerMenuHandler(footerContactsList);
+    }
   });
 
   footerContactsTitle.addEventListener('click', () => {
     footerMenuHandler(footerContactsList);
+    if (!footerNavList.classList.contains('footer__menu--hide')) {
+      footerMenuHandler(footerNavList);
+    }
   });
 }
