@@ -1,9 +1,31 @@
 .about-company {
   padding: 0 135px 96px 310px;
   color: $grey3;
-  background-image: url("../../img/background/about-us-background@1x.png");
+  background-image: url("../img/background/about-us-background@1x.png");
   background-repeat: no-repeat;
   background-position: 105px 0;
+  background-size: 220px 317px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/background/about-us-background@2x.png");
+  }
+
+  @media (max-width: $tabletMax) {
+    padding: 0 25px 83px 210px;
+    background-image: url("../img/background/about-us-background-tablet@1x.png");
+    background-position: 0 0;
+    background-size: 251px 361px;
+  }
+
+  @media (max-width: $tabletMax) and (min-resolution: 144dpi),
+    (max-width: $tabletMax) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/background/about-us-background-tablet@2x.png");
+  }
+
+  @media (max-width: $mobileMax) {
+    padding: 0 15px 65px 15px;
+    background-image: none;
+  }
 }
 
 .about-company h3 {
@@ -12,6 +34,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $tabletMax) {
+    margin: 0 0 23px 0;
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 .about-company p {
@@ -19,6 +47,16 @@
   font-family: $ptmono;
   font-weight: 400;
   line-height: 22px;
+
+  @media (max-width: $tabletMax) {
+    margin: 0 0 23px 0;
+  }
+}
+
+.about-company p > span {
+  @media (max-width: $tabletMax) {
+    display: none;
+  }
 }
 
 .about-company__button {

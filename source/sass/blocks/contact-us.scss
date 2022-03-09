@@ -6,12 +6,26 @@
   background-position: calc(50% - 350px) center,
     calc(50% - 400px) calc(50% - 50px);
   background-size: 511px 288px, 636px 636px;
+
+  @media (max-width: $tabletMax) {
+    background-image: none;
+  }
 }
 
 .contact-us__wrapper {
   padding: 96px 135px 113px 135px;
   display: grid;
-  grid-template-columns: 1fr 570px;
+  grid-template-columns: 1fr 600px;
+
+  @media (max-width: $tabletMax) {
+    padding: 83px 74px 103px 74px;
+    grid-template-columns: 1fr minmax(600px, 700px);
+  }
+
+  @media (max-width: $mobileMax) {
+    padding: 33px 0 41px 0;
+    grid-template-columns: 1fr minmax(290px, 700px) 1fr;
+  }
 }
 
 .contact-us__form {
@@ -19,20 +33,34 @@
 }
 
 .contact-us__form h3 {
-  margin: 0 0 7px 0;
+  margin: 0 15px 7px 15px;
   font-family: $robotoCondensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: $white;
+
+  @media (max-width: $tabletMax) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobileMax) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .contact-us__form p {
-  margin: 0 0 49px 0;
+  margin: 0 15px 49px 15px;
   font-family: $ptmono;
   font-weight: 400;
   line-height: 22px;
   color: $white;
+
+  @media (max-width: $mobileMax) {
+    margin: 0 15px 15px 15px;
+  }
 }
 
 .contact-us__form-flex-layout {
@@ -43,44 +71,29 @@
 }
 
 .contact-us__input {
-  margin-bottom: 40px;
+  margin: 20px 15px;
+  flex-grow: 1;
   flex-basis: 270px;
   background-color: $basicBlue;
-}
 
-.contact-us__input input,
-.contact-us__input textarea {
-  padding: 15px;
-  width: 100%;
-  border: none;
-  background-color: $whiteOpacue01;
-  font-family: $ptmono;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $white;
-
-  &::placeholder {
-    opacity: 1;
-  }
-
-  &:hover,
-  &:focus {
-    outline: 1px solid $white;
+  @media (max-width: $mobileMax) {
+    margin: 15px 15px;
   }
 }
 
 .contact-us__text-input {
-  flex-basis: 570px;
+  flex-grow: 1;
+  flex-basis: 540px;
 }
 
 .contact-us__text-input textarea {
-  resize: none;
   height: 154px;
 }
 
 .contact-us__submit-button {
+  margin: 20px 15px;
   padding: 14px;
+  flex-grow: 1;
   flex-basis: 270px;
   font-family: $robotoCondensed;
   font-weight: 700;
@@ -96,6 +109,8 @@
 }
 
 .contact-us__data-agreement-input {
+  margin: 20px 15px;
+  flex-grow: 1;
   flex-basis: 270px;
 }
 

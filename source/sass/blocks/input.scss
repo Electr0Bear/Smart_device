@@ -1,0 +1,44 @@
+.input input,
+.input textarea {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: $whiteOpacue01;
+  font-family: $ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  &::placeholder {
+    opacity: 1;
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $white;
+  }
+}
+
+.input textarea {
+  resize: none;
+}
+
+.input--invalid input,
+.input--invalid textarea {
+  outline: 1px solid red;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid red;
+  }
+}
+
+.input--invalid label {
+  color: red;
+
+  &::before {
+    border: 1px solid red;
+  }
+}
